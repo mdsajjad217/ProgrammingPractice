@@ -8,8 +8,11 @@ namespace GenericTree
         {
             Console.WriteLine("Hello World!");
 
-            TreeNode rootNode = BuildTree.LevelWiseBuild();
+            TreeNode rootNode = BuildTree.LevelWiseBuild(true);
             BuildTree.LevelWisePrint(rootNode);
+            TreeCount.CountTotalNodes(rootNode);
+            TreeCount.CountTotalLeafNodes(rootNode);
+            TreeCount.CountTreeHeight(rootNode);
         }
     }
 }

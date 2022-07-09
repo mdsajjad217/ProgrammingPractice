@@ -23,6 +23,8 @@ namespace GenericTree
             for (int i = 0; i < noOfChildren; i++)
             {
                 TreeNode child = RecursiveBuild();
+                if (root.children == null)
+                    root.children = new List<TreeNode>();
                 root.children.Add(child);
             }
 
@@ -33,22 +35,39 @@ namespace GenericTree
         {
             Console.Write(root.data + " : ");
 
-            foreach (TreeNode child in root.children)
+            if (root.children != null)
             {
-                Console.Write(child.data + ", ");
+                foreach (TreeNode child in root.children)
+                {
+                    Console.Write(child.data + ", ");
+                }
             }
             Console.WriteLine();
-            foreach (TreeNode child in root.children)
+            if (root.children != null)
             {
-                RecursivePrint(child);
+                foreach (TreeNode child in root.children)
+                {
+                    RecursivePrint(child);
+                }
             }
         }
 
-        public static TreeNode LevelWiseBuild()
+        public static TreeNode LevelWiseBuild(bool manualBuild = false)
         {
-            Queue<TreeNode> nodeQueue = new Queue<TreeNode>();
             TreeNode root = new TreeNode();
+            if (manualBuild == true)
+            {
+                root.data = 1;
+                root.children = new List<TreeNode> {
+                    new TreeNode { data = 2,
+                        children = new List<TreeNode> { new TreeNode { data = 4 }, new TreeNode { data = 5 } } }
+                    , new TreeNode { data = 3, children = new List<TreeNode> { new TreeNode { data = 6, children = new List<TreeNode> { new TreeNode { data = 7 } } } } }
+                };
 
+                return root;
+            }
+
+            Queue<TreeNode> nodeQueue = new Queue<TreeNode>();
             Console.WriteLine("Value of node?");
             string dataString = Console.ReadLine();
             int data = Convert.ToInt32(dataString);
@@ -69,6 +88,8 @@ namespace GenericTree
                     int childData = Convert.ToInt32(childDataString);
                     TreeNode child = new TreeNode();
                     child.data = childData;
+                    if (root.children == null)
+                        root.children = new List<TreeNode>();
                     node.children.Add(child);
                     nodeQueue.Enqueue(child);
                 }
@@ -86,10 +107,13 @@ namespace GenericTree
                 TreeNode node = nodeQueue.Dequeue();
                 Console.Write(node.data + " : ");
 
-                foreach (TreeNode child in node.children)
+                if (node.children != null)
                 {
-                    Console.Write(child.data + ", ");
-                    nodeQueue.Enqueue(child);
+                    foreach (TreeNode child in node.children)
+                    {
+                        Console.Write(child.data + ", ");
+                        nodeQueue.Enqueue(child);
+                    }
                 }
                 Console.WriteLine();
             }

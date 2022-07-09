@@ -7,11 +7,6 @@ namespace GenericTree
 {
     public class TreeNode
     {
-        public TreeNode()
-        {
-            children = new List<TreeNode>();
-        }
-
         public int data;
         public List<TreeNode> children;
     }
