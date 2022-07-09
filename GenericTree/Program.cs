@@ -7,6 +7,9 @@ namespace GenericTree
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            TreeNode rootNode = BuildTree.LevelWiseBuild();
+            BuildTree.LevelWisePrint(rootNode);
         }
     }
 }
