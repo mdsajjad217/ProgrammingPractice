@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "NQtC2+LSxLhTT7f6VOqy3Ni11k7rI2f0fAi7RduYqOkYYHQUSL7JbwRRGmf4HZMDNb5jXrBysudQRu6yatl36g==",
+  "dgSpecHash": "3UHoAPifIWEpuRQcoSSBDnwXN49767a4onIIfrkH9U20scTnA+bY4b0wNSycAGgjNbznVgGHXn/+ibH7k55y/Q==",
   "success": true,
-  "projectFilePath": "E:\\ProgrammingPractice\\GenericTree\\GenericTree.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "e:\\ProgrammingPractice\\GenericTree\\GenericTree.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sajjad\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
