@@ -52,6 +52,29 @@ namespace GenericTree
             }
         }
 
+        public static void PrintAtLevelK(TreeNode root, int level)
+        {
+            Console.WriteLine($"Elements at level: {level}");
+            PrintAtLevelKRecursive(root, level);
+            Console.WriteLine();
+        }
+
+        public static void PrintAtLevelKRecursive(TreeNode root, int level)
+        {
+            if (level == 1)
+            {
+                Console.Write($"{root.data}, ");
+                return;
+            }
+            if (root.children != null)
+            {
+                foreach (TreeNode child in root.children)
+                {
+                    PrintAtLevelKRecursive(child, level - 1);
+                }
+            }
+        }
+
         public static TreeNode LevelWiseBuild(bool manualBuild = false)
         {
             TreeNode root = new TreeNode();
