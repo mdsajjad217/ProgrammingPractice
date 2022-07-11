@@ -1,0 +1,16 @@
+E:\ProgrammingPractice\GraphTheory\bin\Debug\net5.0\GraphTheory.exe
+E:\ProgrammingPractice\GraphTheory\bin\Debug\net5.0\GraphTheory.deps.json
+E:\ProgrammingPractice\GraphTheory\bin\Debug\net5.0\GraphTheory.runtimeconfig.json
+E:\ProgrammingPractice\GraphTheory\bin\Debug\net5.0\GraphTheory.runtimeconfig.dev.json
+E:\ProgrammingPractice\GraphTheory\bin\Debug\net5.0\GraphTheory.dll
+E:\ProgrammingPractice\GraphTheory\bin\Debug\net5.0\ref\GraphTheory.dll
+E:\ProgrammingPractice\GraphTheory\bin\Debug\net5.0\GraphTheory.pdb
+E:\ProgrammingPractice\GraphTheory\obj\Debug\net5.0\GraphTheory.csproj.AssemblyReference.cache
+E:\ProgrammingPractice\GraphTheory\obj\Debug\net5.0\GraphTheory.GeneratedMSBuildEditorConfig.editorconfig
+E:\ProgrammingPractice\GraphTheory\obj\Debug\net5.0\GraphTheory.AssemblyInfoInputs.cache
+E:\ProgrammingPractice\GraphTheory\obj\Debug\net5.0\GraphTheory.AssemblyInfo.cs
+E:\ProgrammingPractice\GraphTheory\obj\Debug\net5.0\GraphTheory.csproj.CoreCompileInputs.cache
+E:\ProgrammingPractice\GraphTheory\obj\Debug\net5.0\GraphTheory.dll
+E:\ProgrammingPractice\GraphTheory\obj\Debug\net5.0\ref\GraphTheory.dll
+E:\ProgrammingPractice\GraphTheory\obj\Debug\net5.0\GraphTheory.pdb
+E:\ProgrammingPractice\GraphTheory\obj\Debug\net5.0\GraphTheory.genruntimeconfig.cache

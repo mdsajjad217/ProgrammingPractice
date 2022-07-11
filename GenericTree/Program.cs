@@ -9,8 +9,8 @@ namespace GenericTree
             Console.WriteLine("Hello World!");
 
             TreeNode rootNode = BuildTree.LevelWiseBuild(true);
-            BuildTree.LevelWisePrint(rootNode);
-            BuildTree.PrintAtLevelK(rootNode, 3);
+            PrintTree.LevelWisePrint(rootNode);
+            PrintTree.PrintAtLevelK(rootNode, 3);
             TreeCount.CountTotalNodes(rootNode);
             TreeCount.CountTotalLeafNodes(rootNode);
             TreeCount.CountTreeHeight(rootNode);
