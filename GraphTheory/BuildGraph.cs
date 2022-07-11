@@ -8,15 +8,15 @@ namespace GraphTheory
 {
     public static class BuildGraph
     {
-        public static List<List<bool>> Build(int noOfNodes, List<Edge> edgeList, bool isDirected = false)
+        public static List<List<int>> Build(int noOfNodes, List<Edge> edgeList, bool isDirected = false)
         {
-            var adjacencyMatrix = new List<List<bool>>();
+            var adjacencyMatrix = new List<List<int>>();
             for (int i = 0; i < noOfNodes; i++)
             {
-                var adjacencySubMatrix = new List<bool>();
+                var adjacencySubMatrix = new List<int>();
                 for (int j = 0; j < noOfNodes; j++)
                 {
-                    adjacencySubMatrix.Add(false);
+                    adjacencySubMatrix.Add(int.MinValue);
                 }
                 adjacencyMatrix.Add(adjacencySubMatrix);
             }
@@ -28,10 +28,10 @@ namespace GraphTheory
 
             foreach (Edge edge in edgeList)
             {
-                adjacencyMatrix[edge.SourceVertex][edge.DestinationVertex] = true;
+                adjacencyMatrix[edge.SourceVertex][edge.DestinationVertex] = 1;
                 if (isDirected == false)
                 {
-                    adjacencyMatrix[edge.DestinationVertex][edge.SourceVertex] = true;
+                    adjacencyMatrix[edge.DestinationVertex][edge.SourceVertex] = 1;
                 }
             }
 

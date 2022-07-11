@@ -10,11 +10,13 @@ namespace GraphTheory
     {
         public int SourceVertex;
         public int DestinationVertex;
+        public int Weight;
 
-        public Edge(int sourceVertex, int destinationVertex)
+        public Edge(int sourceVertex, int destinationVertex, int weight = 1)
         {
             SourceVertex = sourceVertex;
             DestinationVertex = destinationVertex;
+            Weight = weight;
         }
     }
 }
