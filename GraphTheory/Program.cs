@@ -13,6 +13,7 @@ namespace GraphTheory
             TraverseGraph.BreadthFirstSearch(noOfNodes, graphAdjacencyMatrix);
             graphAdjacencyMatrix = BuildGraph.Build(noOfNodes, null, int.MaxValue);
             DijkstraShortestPath.FindSortestPath(noOfNodes, 0, graphAdjacencyMatrix);
+            var res = DijkstraShortestPath.bfs(4, 2, new List<List<int>> { new List<int> { 1, 2 }, new List<int> { 1, 3 } }, 1);
         }
     }
 }
